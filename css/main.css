@@ -1292,12 +1292,24 @@ ul {
 }
 
 .image__item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
   margin-top: 40px;
 }
+@media screen and (min-width: 768px) {
+  .image__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .image__list {
+    margin-bottom: 30px;
+  }
+  .image__list:last-child {
+    margin-bottom: 0px;
+  }
+}
 @media screen and (min-width: 768px) {
   .image__list {
     max-width: calc((100% - 30px) / 2);
