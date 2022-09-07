@@ -25,24 +25,24 @@
 }
 
 .header__menu__div {
-    display: none;
     width: 100%;
 
     @media screen and (max-width: 767px) {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: var(--normal-color);
         height: 100vh;
+        background-color: var(--normal-color);
         transform: translateY(100%);
 
         &.is-open {
             display: flex;
             flex-direction: column;
+            overflow: auto;
             height: 100vh;
             width: 100%;
             padding: 48px 40px;
-            overflow: auto;
+            
             transform: translateY(0);
         }
     }
@@ -210,10 +210,9 @@
 
     display: flex;
     justify-content: center;
-
-    @media screen and (max-width: 767px) {
-        margin-top: 306px;
-        margin-bottom: 64px;
+@media screen and (max-width: 767px) {
+        margin-top: auto;
+        margin-bottom: auto;
         gap: 32px;
         flex-direction: column-reverse;
     }

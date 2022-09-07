@@ -41,6 +41,7 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
+  display: block;
 }
 
 ul {
@@ -103,7 +104,6 @@ ul {
 }
 
 .header__menu__div {
-  display: none;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
@@ -111,17 +111,17 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--normal-color);
     height: 100vh;
+    background-color: var(--normal-color);
     transform: translateY(100%);
   }
   .header__menu__div.is-open {
     display: flex;
     flex-direction: column;
+    overflow: auto;
     height: 100vh;
     width: 100%;
     padding: 48px 40px;
-    overflow: auto;
     transform: translateY(0);
   }
 }
@@ -281,8 +281,8 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .navig {
-    margin-top: 306px;
-    margin-bottom: 64px;
+    margin-top: auto;
+    margin-bottom: auto;
     gap: 32px;
     flex-direction: column-reverse;
   }
