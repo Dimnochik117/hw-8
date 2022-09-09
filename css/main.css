@@ -43,6 +43,11 @@ body {
   font-family: "Roboto", sans-serif;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 70px;
+  }
+}
 
 ul {
   list-style: none;
@@ -214,7 +219,7 @@ ul {
   color: var(--primary-color);
   transition: color var(--time-duration);
 }
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 767px) {
   .nav__link {
     font-size: 40px;
   }
@@ -252,6 +257,7 @@ ul {
 .social__item {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: auto;
 }
 @media screen and (min-width: 768px) {
   .social__item {
@@ -392,13 +398,11 @@ ul {
 @media screen and (min-width: 768px) {
   .fotter__first {
     margin-right: 165px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .fotter__first {
     margin-right: 70px;
-    margin-bottom: 60px;
   }
 }
 
@@ -621,7 +625,13 @@ ul {
   transform: translate(-50%, -50%);
   padding: 40px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .modal {
+    min-width: 100%;
+    max-height: 609px;
+  }
+}
+@media screen and (min-width: 481px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1091,6 +1101,16 @@ ul {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
 
 .team__item {
   border: 1px solid transparent;
@@ -1105,8 +1125,16 @@ ul {
 
 .team__list {
   background: var(--normal-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12) 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgb(0, 0, 0);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767px) {
+  .team__list {
+    margin-bottom: 30px;
+  }
+  .team__list:last-child {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -1214,7 +1242,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   fill: #AFB1B8;
