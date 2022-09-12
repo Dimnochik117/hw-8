@@ -398,6 +398,7 @@ ul {
 @media screen and (min-width: 768px) {
   .fotter__first {
     margin-right: 165px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
